@@ -74,6 +74,6 @@ export const CardEdit = ({ carts, removeFromCart }) => {
 };
 
 CardEdit.propTypes = {
-  carts: propTypes.arrayOf.isRequired,
+  carts: propTypes.objectOf.isRequired,
   removeFromCart: propTypes.func.isRequired,
 };

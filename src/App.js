@@ -1,5 +1,5 @@
 
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import { v4 as uuidv4 } from 'uuid';
 
 import {
@@ -11,7 +11,8 @@ import { HomePage } from './component/HomePage';
 import { CardEdit } from './component/CardEdit';
 
 export const App = () => {
-  const [cart, setCart] = useState([]);
+  // eslint-disable-next-line max-len
+  const [cart, setCart] = useState(JSON.parse(localStorage.getItem('id')) || []);
 
   const addToCart = (id, name) => {
     setCart([
@@ -31,9 +32,9 @@ export const App = () => {
     localStorage.setItem('id', JSON.stringify(cart));
   };
 
-  useEffect(() => {
-    setCart(JSON.parse(localStorage.getItem('id')));
-  }, []);
+  // useEffect(() => {
+  //   setCart(JSON.parse(localStorage.getItem('id')));
+  // }, []);
 
   return (
     <>
