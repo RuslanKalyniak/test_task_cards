@@ -1,0 +1,29 @@
+.modal {
+  height: 100vh;
+  width: 100vw;
+  background-color: rgba(0, 0, 0, 0.4);
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+
+}
+
+.modal__content {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  padding: 20px;
+  border-radius: 12px;
+  background-color: white;
+  margin-bottom: 10px;
+}
+
+.buttonMy {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
